@@ -17,7 +17,7 @@ const Login = () => {
     dispatch(login({ username, password }));
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="anime">
       <label className={styles.label} htmlFor="username">Usuário</label>
       <input className={styles.input} type="text" id="username" value={username} onChange={({ target }) => setUsername(target.value)} />
 
